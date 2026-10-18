@@ -1,0 +1,22 @@
+destination = input("Enter travel destination: ")
+budget = float(input("Travel budget: "))
+transpo = float(input("Transportation: "))
+food = float(input("Food: "))
+hotel = float(input("Hotel: "))
+other = float(input("Other expenses: "))
+
+total = transpo + food + hotel + other
+remaining = budget - total
+average = total / 2
+
+print("\nTRAVEL EXPENSE REPORT")
+print("Destination:", destination)
+print(f"Total Expenses: {total:.2f}")
+print(f"Remaining Budget: {remaining:.2f}")
+print(f"Average Expense: {average:.2f}")
+
+if total <= budget:
+    print("Within Budget")
+else:
+    print("Over Budget")
+  
